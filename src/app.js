@@ -26,9 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
             priorityItem: ""
         },
         methods: {
-            changePriorityHigh: function () {
-                return "High";
-            },
             newTodoSubmit: function () {
                 this.list.push({
                     name: this.todoItem,
