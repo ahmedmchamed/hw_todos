@@ -19,7 +19,7 @@
             <input type="submit" value="Save new todo"/>
         </form>
         <ul>
-           <li v-for="todo in list"> 
+           <li v-for="todo in list" v-bind:class="todo.priority === 'high' ? 'high' : 'low'"> 
                <span>{{ todo.name }}</span>
            </li> 
         </ul>
